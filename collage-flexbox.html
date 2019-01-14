@@ -21,20 +21,33 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <style>
-.card-columns {
-    column-gap: 0rem;
+.flex-column {
+    max-width: 260px;
 }
 
-.card {
-    border-radius: 0rem !important;
-    margin: 0 0 !important;
-    border: 1px solid #f9f9f9;
+.block img {
+    margin: 2px;
+    object-fit: cover !important;
+    width:100%;
+    height:100%
 }
 
-.card img {
-    border-radius: 0rem !important;
-    margin: 0 0 !important;
+.scale:hover {
+    transform: scaleY(1.05);
+    padding-top: 5px;
 }
+
+.block {
+    height: 100%;
+    color: #212529;
+    background: rgba(86, 61, 124, .15);
+    border: 1px solid #f1f1f1;
+
+
+}
+
+
+
 </style>
 
 <body>
@@ -119,11 +132,110 @@
             <h1 class="display-4 font-weight-light text-center"> Collage View using Flex-box </h1>
         </div>
     </div>
-    
-
-
-
-
+    <div class="container-fluid">
+        <div class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_0223e3d36f22778d25debf9bab1affb2.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/AVcNK2cg7kk6c8lUKgIhE3d3PfgURYLNuumig6ZP.jpeg" class="img-fluid">
+            </div>
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_026158ab70e00b4d9ccc0cf9be74a8b6.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_c53887a499d617d94de4cb664fd25117.jpg" class="img-fluid">
+                <img src="https://etaileast.wbresearch.com/UploadedFiles/EventPage/1003574/images/bg-img-hero-13.jpg" class="img-fluid">
+                <img src="https://futurebranches.wbresearch.com/UploadedFiles/EventPage/1004391/images/bg-img-hero-4.jpg" class="img-fluid">
+            </div>
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/C5SuUqjWcj8ZExtsP6cAn5UAbS2ydcRNq90dZfrr.jpeg" class="img-fluid">
+                <img src="https://etaileast.wbresearch.com/UploadedFiles/EventPage/1003574/images/bg-img-hero-13.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/zXIjwmffSEWHOvmeqdsgK46rTfN5wnpKIBwI9LDS.jpeg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_7b583255df282c9f6f9d417043dd67c2.jpg" class="img-fluid">
+            </div>
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_0223e3d36f22778d25debf9bab1affb2.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/AVcNK2cg7kk6c8lUKgIhE3d3PfgURYLNuumig6ZP.jpeg" class="img-fluid">
+            </div>
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_026158ab70e00b4d9ccc0cf9be74a8b6.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_c53887a499d617d94de4cb664fd25117.jpg" class="img-fluid">
+                <img src="https://etaileast.wbresearch.com/UploadedFiles/EventPage/1003574/images/bg-img-hero-13.jpg" class="img-fluid">
+                <img src="https://futurebranches.wbresearch.com/UploadedFiles/EventPage/1004391/images/bg-img-hero-4.jpg" class="img-fluid">
+            </div>
+            <div class="d-flex flex-column">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/C5SuUqjWcj8ZExtsP6cAn5UAbS2ydcRNq90dZfrr.jpeg" class="img-fluid">
+                <img src="https://etaileast.wbresearch.com/UploadedFiles/EventPage/1003574/images/bg-img-hero-13.jpg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/zXIjwmffSEWHOvmeqdsgK46rTfN5wnpKIBwI9LDS.jpeg" class="img-fluid">
+                <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_7b583255df282c9f6f9d417043dd67c2.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="col">
+            <h1 class="display-4 font-weight-light text-center"> Collage View using Flex-box v2 </h1>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_0223e3d36f22778d25debf9bab1affb2.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-3 order-4 order-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_b9e177d88ee3967df7d978d3d424ca67.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/eco/images/uploaded_images/AVcNK2cg7kk6c8lUKgIhE3d3PfgURYLNuumig6ZP.jpeg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_026158ab70e00b4d9ccc0cf9be74a8b6.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_c53887a499d617d94de4cb664fd25117.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 ">
+                <div class="d-flex align-items-center justify-content-center h2 block"> <img src="https://etaileast.wbresearch.com/UploadedFiles/EventPage/1003574/images/bg-img-hero-13.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block">8</div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-6">
+                <div class="d-flex align-items-center justify-content-center h2 block">9</div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-3 order-4 order-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block">10</div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block">11</div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="d-flex align-items-center justify-content-center h2 block">12</div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 ">
+                <div class="d-flex align-items-center justify-content-center h2 block">13</div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 ">
+                <div class="d-flex align-items-center justify-content-center h2 block">14</div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container ">
             <div class="row pt-2 ">
