@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <title>BS4 Testimonial Views</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="author" content="https://github.com/jvining">
+    <meta name="description" content="A Project Template built with Bootstrap 4, jQuery 3.3.1, & Google WebFonts. All assets locally hosted ready for immediate use">
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://jvining.github.io/Starter-Bootstrap-V4/" />
+    <meta property="og:type" content="Product" />
+    <meta property="og:title" content="Bootstrap 4 Migration Playground" />
+    <meta property="og:description" content="A Project Template built with Bootstrap 4, jQuery 3.3.1, & Google WebFonts. All assets locally hosted ready for immediate use" />
+    <meta property="og:image" content="https://placeholdit.co/i/600x315?bg=563d7c&fc=fff&text=Bootstrap%204%20Migration%20Playground" />
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/open-sans.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+.bg-slanted {
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0% 100%);
+}
+
+.bg-slanted-reverse {
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+.bg-pattern {
+    background: url(https://plsadaptive.s3.amazonaws.com/gmedia/externalresizes/panopoly_image_original_440857573b690b6c83ce950b260e66bb.png) center center repeat-x scroll;
+    background-size: cover;
+    box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .015);
+    background-color: #1b0d12;
+}
+
+.bg-pattern .quote:before {
+    font-family: "proxima-nova", Open Sans, sans-serif !important;
+    content: open-quote;
+    display: block;
+    color: #e9124f;
+    font-size: 500px;
+    position: absolute;
+    top: -250px;
+    left: -60px;
+    opacity: .25;
+    /* z-index:9; */
+    /* clear: both; */
+}
+
+.bg-pattern .quote:after {
+    visibility: hidden;
+    content: close-quote;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="img" class="img-fluid" src="https://place-hold.it/250x80/666/fff/000">
+            </a>
+            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agenda</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Download Agenda</a>
+                            <a class="dropdown-item" href="#">Agenda Day 1</a>
+                            <a class="dropdown-item" href="#">Agenda Day 2</a>
+                            <a class="dropdown-item" href="#">Agenda Day 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speaker</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <a class="dropdown-item" href="#">Our Speakers</a>
+                            <a class="dropdown-item" href="#">Speaker Opportunities</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sponsor</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="#">Our Sponsors</a>
+                            <a class="dropdown-item" href="#">Sponsorship Opportunities</a>
+                            <a class="dropdown-item" href="#">Our Media Partners</a>
+                            <a class="dropdown-item" href="#">Media Partners Opportunities</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Content</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="#">Event Downloads</a>
+                            <a class="dropdown-item" href="#">Event Presentations</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="#">About Our Event</a>
+                            <a class="dropdown-item" href="#">Event Venue</a>
+                            <a class="dropdown-item" href="#">Our Event Team</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn btn-sm btn-primary ml-md-3 py-1 mt-1 text-white" href="#">Register Now!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid d-flex justify-content-center">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-12 py-5">
+                <div class="row">
+                    <div class="col  text-center">
+                        <h1 class="text-white">Fluid jumbotron</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-2 col-sm-6 mt-2"><a href="#" class="btn btn-primary btn-xl btn-block">Download Agenda</a></div>
+                    <div class="col-md-4 col-sm-6 mt-2"><a href="#" class="btn btn-primary btn-xl btn-block">Download Attendee List</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Starts -->
+    <!-- Slanted Testimonials Begin -->
+    <div class="container-fluid bg-warning mt-5  bg-slanted">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-10 offset-md-1">
+                    <blockquote>
+                        <p class="fa-3x text-center font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class="font-weight-bold text-center">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info bg-slanted-reverse">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-10 offset-md-1">
+                    <blockquote>
+                        <p class="fa-2x text-center font-weight-light text-white"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class="font-weight-bold text-center text-white">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-success bg-slanted">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-10 offset-md-1">
+                    <blockquote>
+                        <p class="fa-3x text-center text-white font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class="font-weight-bold text-white text-center">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-pattern py-5 mt-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center ">
+                <div class="col-md-10 offset-md-1 quote">
+                    <blockquote>
+                        <p class="fa-2x text-center text-white font-weight-light"><em> Challenges conventional thinking around managing spend on contingent workers</em></p>
+                        <p class="font-weight-bold text-white text-center">Dan Khublall, Senior Director - Global External Workforce Strategy,<strong class="text-danger"> Thomson Reuters</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary mt-5 mb-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-7">
+                    <blockquote>
+                        <p class="fa-2x font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class=" font-weight-bold">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+                <div class="col-md-5">
+                    <img alt="img" class="img-fluid rounded mx-auto" src="https://place-hold.it/450x300/666/fff/000">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary mt-5 mb-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-9">
+                    <blockquote>
+                        <p class="fa-2x text-white font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class=" font-weight-bold text-white ">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+                <div class="col-md-3">
+                    <img alt="img" class="img-fluid rounded mx-auto" src="https://place-hold.it/300x175/666/fff/000">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary mt-5 mb-5">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-2">
+                    <img alt="img" class="img-fluid rounded-circle img-thumbnail mx-auto mb-2" src="https://place-hold.it/150x150/666/fff/000">
+                    <p class="mb-2"><a href="#" class="btn btn-primary btn-sm btn-block">Read My Story</a></p>
+                    <ul class="list-inline list-unstyled text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin-square text-white fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square text-white fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter-square  text-white fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <blockquote>
+                        <p class="fa-2x font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class=" font-weight-bold text-center">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-darken mt-5 mb-5" style="background:url(https://picsum.photos/1500/400/?random) center center no-repeat; background-size:cover;">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center py-2">
+                <div class="col-md-3">
+                    <img alt="img" class="img-fluid rounded mx-auto" src="https://place-hold.it/300x175/666/fff/000">
+                </div>
+                <div class="col-md-9 rounded bg-darken-5 p-3">
+                    <blockquote>
+                        <p class="fa-2x text-white font-weight-light"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</em></p>
+                        <p class=" font-weight-bold text-white">- FirstName LastName, Comapny Job Title, <strong class="text-danger">Company Name</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Starts -->
+    <footer>
+        <div class="container ">
+            <div class="row pt-2 ">
+                <div class="col-md-8 ">
+                    <p>Bootstrap 4 Migration Playground &copy; 2019</p>
+                </div>
+                <div class="col ">
+                    <ul class="list-unstyled list-inline ">
+                        <li class="list-inline-item "><a target="_blank " href="https://getbootstrap.com " data-toggle="tooltip " data-placement="top " data-original-title="Version: 3.3.7 ">Bootstrap </a></li>
+                        <li class="list-inline-item "><a target="_blank " href="https://fontawesome.io/ " data-toggle="tooltip " data-placement="top " data-original-title="Version: 4.6.3 ">Font Awesome </a></li>
+                        <li class="list-inline-item "><a target="_blank " href="https://jquery.com/ " data-toggle="tooltip " data-placement="top " data-original-title="Version: 1.9.1 ">Jquery </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.slim.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/scripts.js "></script>
+</body>
+
+</html>
