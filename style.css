@@ -58,10 +58,10 @@ p, ul,  ol,  li,  table,  address, blockquote, cite {color:#5f5f5f; line-height:
 
 .navbar-toggler-icon {
     display: inline-block;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.25em !important;
+    height: 1.25em !important;
     vertical-align: middle;
     content: "";
     background: no-repeat center center;
-    background-size: 80% 80%;
+    background-size: 80% 80% !important;
 }
