@@ -51,16 +51,13 @@ p, ul,  ol,  li,  table,  address, blockquote, cite {color:#5f5f5f; line-height:
 
 .navbar-toggler:before {
     content:"Menu";
-    right:160px;
-    top:20px;
-    width:50px;
-    font-size:12px;
+    font-size:14px;
 }
 
 .navbar-toggler-icon {
     display: inline-block;
-    width: 1.25em !important;
-    height: 1.25em !important;
+    width: 1em !important;
+    height: 1em !important;
     vertical-align: middle;
     content: "";
     background: no-repeat center center;
