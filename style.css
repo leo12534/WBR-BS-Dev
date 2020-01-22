@@ -1,9 +1,10 @@
 body {background:#fbfbfb; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 
-body .container.bg-secondary, body .container-fluid.bg-secondary{background:#ddd!important;}
+/* body .container.bg-secondary, body .container-fluid.bg-secondary{background:#ddd!important;}
 .dropdown:hover>.dropdown-menu {
   display: block;
-}
+} */
+
 footer {background:#343a40; margin-top:50px; padding:15px 0 0 0;}
 footer [class*="col"] {border:none; background:none; min-height:0; color:#5f5f5f;}
 footer [class*="col"] a {color:#999;}
@@ -55,11 +56,6 @@ p, ul,  ol,  li,  table,  address, blockquote, cite {color:#5f5f5f; line-height:
 }
 
 .navbar-toggler-icon {
-    display: inline-block;
     width: 1em !important;
     height: 1em !important;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 80% 80% !important;
 }
