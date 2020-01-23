@@ -80,13 +80,19 @@
     </nav>
     <!-- Mobile Nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom d-lg-none">
-        <a class="navbar-brand w-25" href="#">
-            <img alt="img" class="img-fluid mw-100" src="https://plsadaptive.s3.amazonaws.com/gmedia/_7D7UClogo.png">
-        </a> <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse-mobile" aria-controls="navbarCollapse-mobile" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="btn btn-sm align-middle btn-primary ml-1 order-lg-last">Agenda</a>
-        <a href="#" class="btn btn-sm align-middle btn-primary ml-1 order-lg-last">Register</a>
+    <div class="container-fluid">
+        <div class="col-4">
+            <a class="navbar-brand mr-0" href="#">
+                <img alt="img" class="img-fluid mw-100" src="https://plsadaptive.s3.amazonaws.com/gmedia/_7D7UClogo.png">
+            </a>
+        </div>
+        <div class="col-8 d-flex align-items-center side-ctas">
+            <button class="navbar-toggler order-last collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse-mobile" aria-controls="navbarCollapse-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="btn btn-sm btn-primary ml-auto">Agenda</a>
+            <a href="#" class="btn btn-sm btn-primary mx-1">Register</a>
+        </div>
         <div class="navbar-collapse collapse" id="navbarCollapse-mobile" style="">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
@@ -133,7 +139,9 @@
                 <li class="nav-item"><a class="nav-link btn btn-sm btn-primary ml-md-3 py-1 mt-1 text-white" href="#">Register Now!</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+    <!-- Mobile Nav End -->
     <div class="jumbotron jumbotron-fluid d-flex justify-content-center">
         <div class="row d-flex align-items-center">
             <div class="col-md-12 p-5">
