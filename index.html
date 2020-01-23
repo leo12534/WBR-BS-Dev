@@ -79,7 +79,7 @@
         </div>
     </nav>
     <!-- Mobile Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom d-lg-none">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom d-lg-none mobile-nav">
         <div class="col-4 p-0">
             <a class="navbar-brand mr-0" href="#">
                 <img alt="img" class="img-fluid mw-100" src="https://plsadaptive.s3.amazonaws.com/eco/images/logos/koYLTYY5fNMu0Vq0ZrwJt0q6rBadAvJqKJM2uJ3M.jpeg">
@@ -514,6 +514,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- Hide on Scroll Mobile Nab -->
+    <script>
+    var prev = 0;
+    var $window = $(window);
+    var nav = $('.nav');
+
+    $window.on('scroll', function() {
+        var scrollTop = $window.scrollTop();
+        nav.toggleClass('hidden', scrollTop > prev);
+        prev = scrollTop;
+    });
+    </script>
 </body>
 
 </html>
