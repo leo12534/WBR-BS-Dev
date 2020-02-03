@@ -79,20 +79,18 @@
         </div>
     </nav>
     <!-- Mobile Nav -->
-
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom d-lg-none mobile-nav">
-        <div class="col-4 p-0" style="display: block;position: inherit;top: 0 !important;max-width: 100%;left: 0;right:0;background-color: #fff;">
+        <div class="col-12 p-0" style="display: block;position: inherit;top: 0 !important;max-width: 100%;left: 0;right:0;background-color: #fff;">
             <a class="navbar-brand mr-0" href="#">
                 <img alt="img" class="img-fluid w-75" src="https://plsadaptive.s3.amazonaws.com/eco/images/logos/koYLTYY5fNMu0Vq0ZrwJt0q6rBadAvJqKJM2uJ3M.jpeg">
             </a>
         </div>
-        <div class="col-8 p-0 d-flex align-content-around flex-wrap side-ctas">
-            <button class="navbar-toggler order-last collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse-mobile" aria-controls="navbarCollapse-mobile" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="col-12 p-0 d-flex align-content-stretch flex-wrap flex-fill side-ctas">
+            <button class="navbar-toggler flex-fill collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse-mobile" aria-controls="navbarCollapse-mobile" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" class="btn btn-sm btn-primary ml-auto d-flex align-content-around flex-wrap">Agenda</a>
-            <a href="#" class="btn btn-sm btn-primary mx-1 d-flex align-content-around flex-wrap">Register</a>
+            <a href="#" class="btn btn-sm btn-primary mx-1 flex-fill justify-content-center d-flex align-items-center">Agenda</a>
+            <a href="#" class="btn btn-sm btn-primary mx-1    flex-fill justify-content-center d-flex align-items-center">Register</a>
         </div>
         <div class="navbar-collapse collapse" id="navbarCollapse-mobile" style="">
             <ul class="navbar-nav ml-auto">
@@ -580,7 +578,7 @@
     <script>
     var prev = 0;
     var $window = $(window);
-    var nav = $('.mobile-nav');
+    var nav = $('.mobile-nav .col-12');
 
     $window.on('scroll', function() {
         var scrollTop = $window.scrollTop();
